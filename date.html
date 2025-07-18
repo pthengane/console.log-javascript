@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //YYYY-MM-DDTHH:MM:SS
+        let now = new Date();
+        document.write("Current date and time is : " + now);
+        document.write("<br> Day is : " + now.getDay())
+        document.write("<br> Date is : " + now.getDate())
+        document.write("<br> Month is : " + now.getMonth())
+        document.write("<br> Year is : " + now.getFullYear())
+        document.write("<br> Hour is : " + now.getHours())
+        document.write("<br> Minutes is : " + now.getMinutes())
+        document.write("<br> Seconds is : " + now.getSeconds())
+        document.write("<br> MiliSeconds is : " + now.getMilliseconds())
+        document.write("<br>")
+        
+        document.write("<br> Hardcoring The Date") //1000millisecond = 1 second
+        let now1 = new Date("2024-05-21T12:20:45");
+        document.write("<br> Givn date data is : " + now1)
+        document.write("<br> Date is : " + now1.getDate())
+        document.write("<br> Year is : " + now1.getFullYear())
+
+
+
+
+    </script>
+</body>
+</html>
