@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter name:<input type="text" onkeypress="counter()" 
+    onkeyup="alert('you release the key')">
+    <p id="result"></p>
+    <script>
+        let count = 0;
+        let counter=()=>
+    {
+        count++;
+        document.getElementById("result").innerText
+        ="total number of characters, enter by you : " + count;
+    }
+    
+    </script>
+</body>
+</html>
