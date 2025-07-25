@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onmouseover="setcolor()"id="para" onmouseout="changecolor()"> This is example of mouseover and mouseout</p>
+    <script>
+        let setcolor=()=>
+    {
+        document.getElementById("para").style.color="blue"
+        document.getElementById("para").style.backgroundColor="yellow";
+    }
+    let changecolor=()=>
+    {
+        document.getElementById("para").style.color=""
+        document.getElementById("para").style.backgroundColor="";
+    }
+    </script>
+</body>
+</html>
