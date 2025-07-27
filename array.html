@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let student=[1,"vilas",20,90.29,"male","ReactJs"]
+        for(var i=0;i<student.length;i++)
+        {
+            document.writeln(student[i]+"<br>");
+        }
+
+        var emp = [101,"Nikesh","HR","Head HR",500000];
+        document.write("<br> Output of For of loop is <br>")
+        for(var j of emp) //point direct to element of for-of loop
+        {
+            document.write(j+"<br>");
+        }
+
+        document.write("<br> Working of for-in loop <br>")
+        let fruit = [121,"Orange","20 gm",20]
+        for(let k in fruit) // point it to index not to element when using for-in loop)
+        {
+            document.write(fruit[k] + "<br>");
+        }
+
+        document.write("<br> Working of for-of loop with books array <br>")
+        let books = [131,"Harry-Potter","J. K. Rolling",245,"Adventure"]
+        for(var j of books)
+        {
+            document.write(j+"<br>")
+        }
+
+        document.write("<br> Working of for-in loop with books array <br>")
+        for(let k in books)
+        {
+            document.write(books[k]+"<br>")
+        }
+
+
+</script>
+    
+</body>
+</html>
