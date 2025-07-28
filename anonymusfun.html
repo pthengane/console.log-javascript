@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = function(name)
+        {
+            alert("Hello " + name);
+        }
+        a("Vilas");
+
+        let add = function(c,d)
+        {
+            return(c+d);
+        }
+        var r = add(10,20);
+        alert(r);
+
+        let square=(no)=> // It is arrow function just like anonumus.
+        {
+            return(no*no);
+        }
+        alert("Square of given number is " + square(4));
+
+
+        let sumnum=(num)=> //function to find addition upto given num(it is arrow function)
+        {
+            var sum = 0;
+            for(var i=1;i<=num;i++)
+        {
+            sum = sum + i;
+        }
+        return sum;
+        }
+        alert(sumnum(5));
+    </script>
+    
+</body>
+</html>
