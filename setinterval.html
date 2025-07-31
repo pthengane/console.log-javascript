@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"> 
+
+    </p>
+    <button onclick="resettime()">Clear Time</button>
+    <script>
+        let display=()=>
+    {
+        let now = new Date();
+        document.getElementById("result").innerText=now;
+        //document.write("Current date and time is : " + now)
+    }
+    var id=setInterval(display,1000);
+    //clearInterval(id); //error
+    let resettime=()=>
+    {
+        clearInterval(id);
+    }
+
+    
+    </script>
+</body>
+</html>
