@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let names = ["Jaya","Rekha","Sushma"];
+        document.write(...names + ","); //spread operator // visit each element
+
+        
+        let vegetables = ["Potato","Tomato"]; ///Mostly used to copy
+        let fruits = ["Apple","Banana"];
+        let cart = [...fruits,...vegetables,"soup","detergent"] //it. is mostly used to copy elements
+        document.write("<br>" + cart);
+
+
+        //find max element from array 
+        let price = [120,400,700,200];
+        let maxprice = Math.max(...price)
+        alert(`Max element is ${maxprice}`); 
+
+
+        //Rest Parameter
+        
+
+
+
+
+
+    </script>
+</body>
+</html>
