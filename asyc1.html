@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        console.log("1. Start to prepare the food.")
+        function wait()
+        {
+            console.log("2. Wait.... for 2 seconds");
+        }
+
+        let mypromise = new Promise((resolve,reject)=>
+    {
+        setTimeout(()=>
+    {
+        wait()
+        resolve('async, Task Completed')
+    },2000)
+    })
+    
+    mypromise
+    .then((response)=>
+    {
+        alert(response)
+        console.log("3. Food is served..")
+    })
+    .catch((error)=>
+    {
+        alert(error)
+    })
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
